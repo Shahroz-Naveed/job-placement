@@ -6,7 +6,7 @@
     <u>Personal Detail</u>
 </h1>
 <hr>
-    <div class="container">
+    <div class="container " >
         <form class="form-group" action="" method="">
             @csrf
         <div class="row">
@@ -81,9 +81,10 @@
           </div>
         </div>
       <div class="container  mt-4 ml-6">
-        <button class="btn btn-success">Next</button>
+        <button class="btn btn-success mb-5">Next</button>
       </div>
         </form>
     </div>
+    
 
     @endsection

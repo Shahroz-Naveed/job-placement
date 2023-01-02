@@ -1,6 +1,6 @@
-<footer class="bg-info text-center text-lg-start fixed-bottom">
+<footer class="bg-info text-center text-lg-start ">
     <!-- Grid container -->
-    <div class="container p-4">
+    <div class="container p-4 mt-100">
       <!--Grid row-->
       <div class="row">
         <!--Grid column-->

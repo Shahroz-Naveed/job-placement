@@ -7,12 +7,19 @@
   @stack('title')
 </head>
 <body>
-    <nav class="navbar navbar-light bg-light">
-        <div class="container-fluid bg-success">
+    <nav class="navbar navbar-light bg-light sticky-top">
+        <div class="container">
           <a class="navbar-brand" href="#">
-            <img src="{{asset('img/1.jpeg')}}" alt="" width="60" height="30" class="d-inline-block align-text-top ">
-            Job-Placement  (Kanzul Madaris Board Dawateislami)
+            <img src="{{url('img/kmb-logo.png')}}" alt="" width="120px" height="100px" class="d-inline-block align-text-top ">
           </a>
-  
-        </div>
+          <a class="navbar-nav justify-content-center" href="#">
+              <img src="{{url('img/logo-2.png')}}" alt="" width="200px" height="50px" class="d-inline-block align-text-center">
+          </a>
+       
+          
     </nav>
+    <div class="container">
+    <div class="row">
+      <img src="{{url('img/banner.png')}}"  alt="">
+    </div>
+    </div>

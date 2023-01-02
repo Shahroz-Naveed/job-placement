@@ -53,10 +53,13 @@
             </div>
         
             <div class="container mt-3">
-                <button class="btn btn-success">Previous</button>
-                <button class="btn btn-success">Next</button>
+                <button class="btn btn-dark mb-5">Previous</button>
+                <button class="btn btn-success mb-5">Next</button>
             </div>
 
         </div>
+        </form>
         </div>
+        
+        
 @endsection
