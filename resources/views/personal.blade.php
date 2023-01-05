@@ -32,7 +32,7 @@
            </div>
            <div class="col-md-4 mt-3">
             <label for="">Weight(Kg)</label>
-            <input type="number" name = "weight" class="form-control"  value=""  placeholder="Height in Inches" required>
+            <input type="number" name = "weight" class="form-control"  value=""  placeholder="Weight in Kg" required>
            </div>
           <div class="col-md-6 mt-3">
             <label for="">Date Of Birth (mm/dd/yyyy)</label>
@@ -45,7 +45,7 @@
          <div class="col-md-4 mt-4">
            <label for="">Blood-Group</label>
            <select name="blood" style="width:100px;" >
-              <option value="1"></option>
+              <option value=""></option>
               <option value="">A+</option>
               <option value="">A-</option>
               <option value="">B+</option>

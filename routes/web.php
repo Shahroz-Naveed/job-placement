@@ -1,6 +1,14 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\JobController;
+use App\Models\Academic;
+use App\Models\Computer;
+use App\Models\Contact;
+use App\Models\JobExperience;
+use App\Models\Personal;
+use App\Models\Proficiency;
+use App\Models\Temporal;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,12 +33,14 @@ Route::get('/academic', function () {
 Route::get('/temporal', function () {
     return view('temporal');
 });
-Route::get('/proficiency', function () {
-    return view('proficiency');
-});
-Route::get('/computer', function () {
-    return view('computer');
-});
+Route::get('/proficiency',[JobController::class,"viewproficiency"]);
+Route::post('/proficiency',[JobController::class,"getproficiency"]);
+
+
+Route::get('/computer',[JobController::class,"viewcomputerskills"]);
+Route::post('/computer', [JobController::class,"getcomputerskills"]);
+
+
 Route::get('/experience', function () {
     return view('jobExperience');
 });
