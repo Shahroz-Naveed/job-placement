@@ -21,30 +21,31 @@ use App\Models\Temporal;
 |
 */
 
-Route::get('/', function () {
-    return view('personal');
-});
-Route::get('/contact', function () {
-    return view('contact');
-});
-Route::get('/academic', function () {
-    return view('academic');
-});   
-Route::get('/temporal', function () {
-    return view('temporal');
-});
-Route::get('/proficiency',[JobController::class,"viewproficiency"]);
-Route::post('/proficiency',[JobController::class,"getproficiency"]);
+Route::get('/',[JobController::class,"viewpersonal"]);
+Route::post('/',[JobController::class,"storepersonal"]);
+
+Route::get('/contact',[JobController::class,"viewcontact"]);
+Route::post('/contact',[JobController::class,"storecontact"]);
+
+
+
+Route::get('/academic',[JobController::class,"viewacademic"]);
+Route::post('/academic',[JobController::class,"storeacademic"]);  
+
+
+
+Route::get('/temporal',[JobController::class,"viewtemporal"]);
+Route::post('/temporal',[JobController::class,"storetemporal"]);
 
 
 Route::get('/computer',[JobController::class,"viewcomputerskills"]);
-Route::post('/computer', [JobController::class,"getcomputerskills"]);
+Route::post('/computer', [JobController::class,"storecomputerskills"]);
 
 
-Route::get('/experience', function () {
-    return view('jobExperience');
-});
-Route::get('/cv', function () {
-    return view('cv');
-});
+Route::get('/experience',[JobController::class,"viewexperience"]);
+Route::post('/experience', [JobController::class,"storeexperience"]);
+
+// Route::get('/cv', function () {
+//     return view('cv');
+// });
 

@@ -15,21 +15,46 @@ use App\Models\User;
 class JobController extends Controller
 {
     // Personal  //
+public function viewpersonal(){
+    return view ('/');
+}
 
+public function storepersonal(){
+    //
+}
 
 
     // Contact  //
-
+    public function viewcontact(){
+        return view ('/contact');
+    }
+    
+    public function storecontact(){
+        //
+    }
+    
 
 
     // Academic //
-
+    public function viewacademic(){
+        return view ('/academic');
+    }
+    
+    public function storeacademic(){
+        //
+    }
 
 
 
     // Temporal //
 
+    public function viewtemporal(){
+        return view ('/temporal');
+    }
     
+    public function storetemporal(){
+        //
+    }
     
     
     // Proficiency //
@@ -37,8 +62,8 @@ class JobController extends Controller
     public function viewproficiency(){
         return view('proficiency');
     }
-    public  function getproficiency(Request $request){
-        print_r($request->all());
+    public  function storeproficiency(Request $request){
+       //
 
     }
     
@@ -48,14 +73,21 @@ class JobController extends Controller
     public function viewcomputerskills(){
         return view('computer');
     }
-    public  function getcomputerskills(Request $request){
-        print_r($request->all());
+    public  function storecomputerskills(Request $request){
+        //
 
     }
     
 
     // JOb Experience  //
 
+    public function viewexperience(){
+        return view ('/experience');
+    }
+    
+    public function storeexperience(){
+        //
+    }
 
 
 
