@@ -8,5 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class JobExperience extends Model
 {
     use HasFactory;
+    protected $table =  "job_experiences";
+    protected $PrimaryKey = "jobexp_id";
    
 }

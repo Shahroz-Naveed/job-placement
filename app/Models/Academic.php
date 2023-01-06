@@ -9,5 +9,7 @@ use App\Http\Controllers\JobController;
 class Academic extends Model
 {
     use HasFactory;
+    protected $table = "academics";
+    protected $PrimaryKey = "academic_id";
     
 }

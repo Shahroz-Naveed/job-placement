@@ -7,6 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 class Personal extends Model
 {
     use HasFactory;
+    protected $table =  "personals";
+    protected $PrimaryKey = "personal_id";
    
     
 }

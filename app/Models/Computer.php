@@ -10,5 +10,7 @@ use App\Http\Controllers\JobController;
 class Computer extends Model
 {
     use HasFactory;
+    protected $table = "computers";
+    protected $PrimaryKey = "comp_id";
 
 }

@@ -14,16 +14,24 @@ use App\Models\User;
 
 class JobController extends Controller
 {
-    //Computer //
+    // Personal  //
 
-    public function viewcomputerskills(){
-        return view('computer');
-    }
-    public  function getcomputerskills(Request $request){
-        print_r($request->all());
 
-    }
 
+    // Contact  //
+
+
+
+    // Academic //
+
+
+
+
+    // Temporal //
+
+    
+    
+    
     // Proficiency //
 
     public function viewproficiency(){
@@ -33,5 +41,26 @@ class JobController extends Controller
         print_r($request->all());
 
     }
+    
+
+    //Computer //
+
+    public function viewcomputerskills(){
+        return view('computer');
+    }
+    public  function getcomputerskills(Request $request){
+        print_r($request->all());
+
+    }
+    
+
+    // JOb Experience  //
+
+
+
+
+    
+
+
 
 }

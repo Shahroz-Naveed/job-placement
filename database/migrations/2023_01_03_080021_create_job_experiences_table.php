@@ -16,7 +16,7 @@ return new class extends Migration
     {
         Schema::create('job_experiences', function (Blueprint $table) {
         //    Professional experience 
-            $table->id();
+            $table->id('jobexp_id');
             $table->string('Professional-job-Institue-name')->nullable();
             $table->string('Professional-job-Designation')->nullable();
             $table->date('Professional-job-Start-Date')->nullable();
